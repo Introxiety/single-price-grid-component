@@ -94,7 +94,7 @@ body {
 main {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    max-width: 30em;
+    max-width: 24em;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     margin: 1rem;
 }
@@ -120,19 +120,19 @@ a {
     background-color: hsl(71, 73%, 54%);
     border: none;
     text-align: center;
-    padding: 1em;
+    padding: .8em;
     border-radius: .5em;
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-decoration: none;
     font-weight: bold;
     color: white;
-    margin-top: 2rem;
+    margin-top: 1rem;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Sizing */
 p {
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 
@@ -140,6 +140,7 @@ p {
 
 div:nth-of-type(1)>p {
     color: #b0b3b9;
+    line-height: 2;
 }
 
 div:nth-of-type(1) {
@@ -155,7 +156,7 @@ div:nth-of-type(2) {
 div:nth-of-type(3) {
     background-color: #4abebd;
     color: hsl(204, 43%, 93%);
-    padding-right: 10rem;
+    padding-right: 9.02rem;
     border-radius: 0 0 .5rem .5rem;
 }
 
@@ -171,17 +172,23 @@ div:nth-of-type(1)>h2 {
     color: hsl(71, 73%, 54%);
 }
 
+
 h2 {
     display: flex;
     align-items: center;
     font-weight: lighter;
-    color: lightgray
+    color: lightgray;
+    font-size: 1rem;
+}
+
+h1{
+    font-size: 1.5rem;
 }
 
 /* Typography */
 
 .font-size-large {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     margin-right: 1rem;
     color: white;
@@ -190,13 +197,13 @@ h2 {
 @media screen and (min-width: 90em) {
     main{
         grid-template-columns: repeat(2,1fr);
-        max-width: 56rem;
-        grid-template-rows: 18rem auto;
+        max-width: 43rem;
+        grid-template-rows: 15rem auto;
     }
     div:nth-of-type(1){
         grid-column: span 2;
         border-radius: .5rem .5rem 0 0;
-        padding-right: 10rem;
+        padding-right: 5rem;
     }
 
     div:nth-of-type(2){
@@ -205,12 +212,13 @@ h2 {
 
     div:nth-of-type(3){
         border-radius: 0 0 .5rem 0 ;
+        padding-right: 5rem;
     }
     div{
         padding: 3rem;
     }
     
     a{
-        margin-top: 2.5rem;
+        margin-top: 0;
     }
 }
